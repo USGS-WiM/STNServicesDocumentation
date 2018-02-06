@@ -8,13 +8,12 @@
                 <div class="well">
                     <h3>Introduction</h3>
                     <p>
-                        The USGS Short-Term Network (STN) System includes data serices that power the <a href="{{configSettings.application}}" target="_blank">web data entry applicaton</a>,
-                        public and internal mapping application and numerous other applications. The services can be directly accessed using the STN Service API documented here, or consumed by 
-                        a custom client application using HTTP protocols. If you have any questions about the services or need additional services, please contact Marie Peppler (mpeppler@usgs.gov).
+                        StreamStats National Streamflow Statistics (NSS) services that provides regional flood-peak streamflow estimates and low flow frequency/duration streamflow estimates.
+                        The services can be directly accessed using the NSS Service API documented here, or consumed by a custom client application using HTTP protocols. 
                     </p>
                     <p>
-                        The STN Web Services API performs multiple high level procedures which include; database queries, geospatial queries and service requests in order to compile and create simple 
-                        objects that can be consumed by custom client applications. As documented by this page, which can also serve as an URL builder, the STN Service API is built following 
+                        The NSS Web Services API performs multiple high level procedures which include; database queries, geospatial queries and service requests in order to compile and create simple 
+                        objects that can be consumed by custom client applications. As documented by this page, which can also serve as an URL builder, the NSS Service API is built following 
                         <a href="http://en.wikipedia.org/wiki/Representational_state_transfer" target="_blank">RESTful</a> principles to ensure scalability and predictable URLs.
                     </p>
 
@@ -87,9 +86,10 @@
                     <td>{{item.type}}</td>
                     <td>{{item.optional}}</td>
                     <td>{{item.description}}</td>
-                    <td>
-                        <i [ngClass]="item.value || item.optional ? 'fa fa-check green': 'fa fa-warning red'"></i>
-                        <input style="width:inherit" [(ngModel)]="item.value" [required]="!item.optional" (change)="updateNewUri()" novalidate>
+                    <td style="padding: 8px .75rem 8px 8px !important; display:flex;">
+                        <input style="width:inherit;flex:3;" [(ngModel)]="item.value" [required]="!item.optional" (change)="updateNewUri()" novalidate>
+                        <i [ngClass]="item.value || item.optional ? 'fa fa-check green': 'fa fa-warning red'" style="left: 0 !important; margin-left: 5px; top: 12px !important;"></i>
+                        
                     </td>
                     <td><span *ngIf="item.link"><a [attr.href]="item.link" target="_blank">{{item.linkName}}</a></span></td>
                 </tr>
