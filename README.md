@@ -1,3 +1,5 @@
+![WiM](wimlogo.png)
+
 # ServicesDocumentation
 
 REST Services documentation template for use with any WiM services documentation.
