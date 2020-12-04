@@ -3,7 +3,7 @@
     "name": "STNServicesDocumentation",
     "organization": "U.S. Geological Survey",
     "description": "angular 4 cli services documentation page using exchangeable config.json file",
-    "version": "v1.0.0",
+    "version": "v1.0.1",
     "status": "Production",
 
     "permissions": {
