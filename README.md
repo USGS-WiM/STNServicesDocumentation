@@ -15,7 +15,7 @@ Navigate to `http://localhost:4200/`. The app will automatically reload if you c
 
 #### Deployment Instructions
 
-Copy the dist folder and replace it with the contents of the "Documentation" folder under STNServices on toad. **Be sure to the "web" config file alone**. If you accidentally delete, you can copy over the one from this repo.
+Copy the dist folder and replace it with the contents of the "Documentation" folder under STNServices on toad. **Be sure to include the "web" config file**. If you accidentally delete it, you can copy over the one from this repo.
 
 ## Configuration
 
