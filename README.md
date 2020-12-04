@@ -6,8 +6,16 @@ REST Services documentation template for use with any WiM services documentation
 
 ## Development server
 
-Clone or download zip file. Run `npm install`, then `ng serve` for a dev server. 
+#### Development environment settings:
+Node version confirmed working with: 12.18.2
+
+#### Install Instructions
+Clone or download zip file. Run `npm install`, then `ng serve --base-href` for a dev server. 
 Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+#### Deployment Instructions
+
+Copy the dist folder and replace it with the contents of the "Documentation" folder under STNServices on toad. **Be sure to include the "web" config file**. If you accidentally delete it, you can copy over the one from this repo.
 
 ## Configuration
 
