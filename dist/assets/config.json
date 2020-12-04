@@ -2128,7 +2128,7 @@
                             "showMap": true
                         },
                         {
-                            "uri": "/Sites/FilteredSites{0}?Event={1}&State={2}&SensorType={3}&NetworkName={4}&OPDefined={5}&HWMOnly={6}&HWMSurveyed={7}&SensorOnly={8}&RDGOnly={9}",
+                            "uri": "/Sites/FilteredSites{0}?Event={1}&State={2}&SensorType={3}&NetworkName={4}&OPDefined={5}&HWMOnly={6}&HWMSurveyed={7}&SensorOnly={8}&RDGOnly={9}&HousingTypeOne={10}&HousingTypeSeven={11}",
                             "description": "This service returns a list of sites that meet the passed-in parameters. Includes most recent OP, network names, and events.",
                             "id": "Filtered Sites",
                             "parameters": [
@@ -2140,7 +2140,9 @@
                                { "name": "hwmOnlySites", "type": "number", "description": "1 for sites with hwms only (no sensors)", "optional": true, "value": "" },
                                { "name": "surveyedHWMs", "type": "boolean", "description": "true for sites with surveyed hwms only, false for those with unsurveyed hwms", "optional": true, "value": "" },
                                { "name": "sensorOnlySites", "type": "number", "description": "1 for sites with sensors only (no hwms)", "optional": true, "value": "" },
-                               { "name": "rdgOnlySites", "type": "number", "description": "1 for sites that have an RDG sensor proposed or deployed or an RDG housing type listed", "optional": true, "value": "" }
+                               { "name": "rdgOnlySites", "type": "number", "description": "1 for sites that have an RDG sensor proposed or deployed or an RDG housing type listed", "optional": true, "value": "" },
+                               { "name": "preDepBracketSitesOnly", "type": "number", "description": "1 for sites that have a pre-deployed bracket listed", "optional": true, "value": "" },
+                               { "name": "surveyedRPSitesOnly", "type": "number", "description": "1 for sites that have a surveyed reference point listed", "optional": true, "value": "" }
                             ],
                             "availableMedia": [".xml", ".json", ".geojson"],
                             "selectedMedia": ".json",
